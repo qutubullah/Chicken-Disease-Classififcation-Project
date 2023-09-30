@@ -21,7 +21,8 @@ list_of_files = [
     "params.yaml",
     "requirements.txt",
     "setup.py",
-    "research/trials.pynb"
+    "research/trials.pynb",
+    "templates/index.html"
     ]
 for filepath in list_of_files:
     filepath = Path(filepath)
@@ -31,7 +32,7 @@ for filepath in list_of_files:
         os.makedirs(filedir,exist_ok=True)
         logging.info(f"Creating directory; {filedir} for the {filename}")
 
-    if not (os.path.exists(filepath)) or (os.path.getsize(filename) == 0):
+    if not (os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
         with open(filepath , "w") as f:
             pass
             logging.info(f"Creating empty file: {filepath}")
