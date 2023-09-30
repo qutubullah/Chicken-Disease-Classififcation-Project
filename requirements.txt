@@ -9,7 +9,7 @@ python-box==6.0.2
 pyYaml
 tqdm
 ensure==1.0.2
-jolib
+joblib
 types-pyYaml
 scipy
 Flask
